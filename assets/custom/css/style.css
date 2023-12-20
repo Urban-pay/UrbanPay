@@ -1,0 +1,32 @@
+/* body {
+    margin: 0 !important;
+    padding: 0 !important;
+} */
+.custom-color{
+    color: #7217aa;
+}
+.custom-color1{
+    color: #0e7437;
+}
+.custom-border{
+    border-color: #0e7437;
+    
+}
+.custom-border1{
+    border-color: #7217aa;
+}
+.custom-bg1{
+    background-color: #0e7437;
+
+}
+.custom-bg{
+    background-color: #7217aa;
+
+}
+
+@media ((max-width: 768px)) {
+    
+    .none{
+        display: none;
+    }
+}
