@@ -8,53 +8,95 @@
     <link rel="stylesheet" href="./assets/bootstrap5.2/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/custom/css/style.css">
     <link rel="stylesheet" href="assets/tailwind/tailwind.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="assets/tailwind/tailwind.js"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <!-- <script src="assets/tailwind/tailwind.js"></script> -->
 
 </head>
 
 <body>
     <div class="container  ">
-        <nav class="bg-light-500">
+        <nav class="navbar navbar-expand-md navbar bg-light-500">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <div class="flex flex-shrink-0 items-center">
+                            <img class="h-12 w-auto" src="assets/img/URBAN PAY LOGO PNG.png" alt="Your Company">
+                            <p class="text-lg font-bold leading-6 text-gray-900 ">URBAN PAY</p>
+                        </div>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarID"
+                        aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon ">...</span>
+                    </button>
+                    <div class="collapse navbar-collapse " id="navbarID">
+                        <div class="navbar-nav ">
+                            <ul class="nav nav-pills nav-fill block">
+                                <li class="nav-item">
+                                    <a class="nav-link  effectSect link  text-slate-800 active rounded-md px-3 py-2 text-lg font-medium"
+                                        href="index.html" aria-current="page" >Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link hover:bg-gray-900 effectSect text-slate-800 rounded-md px-3 py-2 text-lg font-medium actives"
+                                        href="about.html">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link hover:text-lime-800 effectSect text-slate-800 rounded-md px-3 py-2 text-lg font-medium"
+                                        href="contact.html">Contact Us</a>
+                                </li>
+
+                            </ul>             
+                        </div>
+                        <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+                            <a href="#" class="text-lg font-bold leading-6 text-gray-900 mt-2">Log in <span
+                                    aria-hidden="true">&rarr;</span></a>
+                            <button class="bg-purple-600 text-white font-bold py-2 px-4 rounded">
+                                Create Account
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+        <nav class="bg-light-500 d-none">
             <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
                 <div class="relative flex h-16 items-center justify-between">
                     <div class="absolute inset-y-0 left-0 flex items-end sm:hidden">
                         <!-- Mobile menu button-->
                         <button type="button"
                             class="relative inline-flex items-left justify-left rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
-                            aria-controls="mobile-menu" aria-expanded="false">
+                            aria-expanded="false" type="button" data-bs-toggle="collapse" data-bs-target="#navbarID"
+                            aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="absolute -inset-0.5"></span>
                             <span class="sr-only">Open main menu</span>
                             <!--
-                      Icon when menu is closed.
-          
-                      Menu open: "hidden", Menu closed: "block"
-                    -->
+                          Icon when menu is closed.
+              
+                          Menu open: "hidden", Menu closed: "block"
+                        -->
                             <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                             </svg>
                             <!--
-                      Icon when menu is open.
-          
-                      Menu open: "block", Menu closed: "hidden"
-                    -->
+                          Icon when menu is open.
+              
+                          Menu open: "block", Menu closed: "hidden"
+                        -->
                             <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                             </svg>
                         </button>
                     </div>
-                    <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                    <div class="  flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                         <div class="flex flex-shrink-0 items-center">
                             <img class="h-12 w-auto" src="assets/img/URBAN PAY LOGO PNG.png" alt="Your Company">
                             <p class="text-lg font-bold leading-6 text-gray-900 ">URBAN PAY</p>
                         </div>
-                        <div class="hidden sm:ml-6 sm:block">
+                        <div class=" sm:ml-6 ">
                             <div class="flex space-x-5">
                                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                                <div class="navstyle ml-40">
+                                <div class="navstyle ml-40 collapse navbar-collapse" id="navbarID">
                                     <ul class="nav nav-pills nav-fill">
                                         <li class="nav-item">
                                             <a class="nav-link effectSect text-white rounded-md px-3 py-2 text-lg font-medium"
@@ -96,9 +138,9 @@
                     <a href="#"
                         class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Contact
                         Us</a>
-                    <!-- <a href="#"
-                        class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Calendar</a> -->
                 </div>
+                <!-- <a href="#"
+                            class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Calendar</a> -->
             </div>
 
         </nav>
@@ -114,6 +156,8 @@
                 </button>
             </div>
         </div>
+
+
 
         <div class=" row my-40 justify-content-center  align-items-center text-center">
             <div class="col-md-12">
@@ -133,7 +177,8 @@
                 </h1>
                 <p class="my-3 text-lg text-center  text-slate-800">Want to join us?</p>
                 <p class="my-3 text-lg text-center  text-slate-800">Check out available positions on the urbanPay team
-                    <a href="" class="custom-color underline">here</a> </p>
+                    <a href="" class="custom-color underline">here</a>
+                </p>
 
                 <div class="bg-slate-200 h-50 mt-20 py-10 rounded-md ">
                     <h1 class="custom-color display-5 font-bold my-9">Know what we're up to</h1>
