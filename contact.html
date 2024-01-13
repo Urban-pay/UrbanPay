@@ -19,9 +19,9 @@
                 <div class="relative flex h-16 items-center justify-between">
                     <div class="absolute inset-y-0 left-0 flex items-end sm:hidden">
                         <!-- Mobile menu button-->
-                        <button type="button"
-                            class="relative inline-flex items-left justify-left rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
-                            aria-controls="mobile-menu" aria-expanded="false">
+                        <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarID"
+                        aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation"
+                            class="relative inline-flex items-left justify-left rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                             <span class="absolute -inset-0.5"></span>
                             <span class="sr-only">Open main menu</span>
                             <!--
@@ -48,7 +48,7 @@
                     <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                         <div class="flex flex-shrink-0 items-center">
                             <img class="h-12 w-auto" src="assets/img/URBAN PAY LOGO PNG.png" alt="Your Company">
-                            <p class="text-lg font-bold leading-6 text-gray-900">URBAN PAY</p>
+                            <p class="text-lg font-bold leading-6 text-gray-900 ">URBAN PAY</p>
                         </div>
                         <div class="hidden sm:ml-6 sm:block">
                             <div class="flex space-x-5">
@@ -56,7 +56,7 @@
                                 <div class="navstyle ml-40">
                                     <ul class="nav nav-pills nav-fill">
                                         <li class="nav-item">
-                                            <a class="nav-link effectSect text-white rounded-md px-3 py-2 text-lg font-medium"
+                                            <a class="nav-link effectSect text-white rounded-md px-3 py-2 text-lg font-medium actives"
                                                 href="index.html">Home</a>
                                         </li>
                                         <li class="nav-item">
@@ -64,7 +64,7 @@
                                                 href="about.html">About</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link effectSect text-white rounded-md px-3 py-2 text-lg font-medium actives"
+                                            <a class="nav-link effectSect text-white rounded-md px-3 py-2 text-lg font-medium"
                                                 href="contact.html">Contact Us</a>
                                         </li>
 
@@ -85,7 +85,7 @@
             </div>
 
             <!-- Mobile menu, show/hide based on menu state. -->
-            <div class="sm:hidden" id="mobile-menu">
+            <div  class="collapse navbar-collapse " id="navbarID">
                 <div class="space-y-1 px-2 pb-3 pt-2">
                     <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                     <a href="#" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
@@ -97,6 +97,13 @@
                         Us</a>
                     <!-- <a href="#"
                         class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Calendar</a> -->
+                        <div class=" text-center">
+                            <a href="#" class="text-lg font-bold block   text-base  text-gray-900 rounded-md  px-3 py-2  ">Log in <span
+                                    aria-hidden="true">&rarr;</span></a>
+                            <button class="bg-purple-600 text-white font-bold py-2 px-4 rounded">
+                                Create Account
+                            </button>
+                        </div>
                 </div>
             </div>
 
