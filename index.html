@@ -1,274 +1,466 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Urban Pay</title>
-    <link rel="stylesheet" href="./assets/bootstrap5.2/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/custom/css/style.css">
-    <link rel="stylesheet" href="assets/tailwind/tailwind.css">
-    <link rel="shortcut icon" href="assets/img/URBAN PAY LOGO PNG.png" type="image/x-icon">
-    <!-- <link rel="stylesheet" href="assets/custom.css"> -->
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<style>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Urban Pay</title>
+        <link rel="stylesheet" href="./assets/bootstrap5.2/bootstrap.min.css">
+        <link rel="stylesheet" href="./assets/custom/css/style.css">
+        <link rel="stylesheet" href="assets/tailwind/tailwind.css">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="shortcut icon" href="assets/img/URBAN PAY LOGO PNG.png"
+            type="image/x-icon">
+        <!-- <link rel="stylesheet" href="assets/custom.css"> -->
+        <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    </head>
+    <style>
 
 </style>
 
-<body>
-    <div class="container">
-        <nav class="bg-light-500">
-            <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-                <div class="relative flex h-16 items-center justify-between">
-                    <div class="absolute inset-y-0 left-0 flex items-end sm:hidden">
-                        <!-- Mobile menu button-->
-                        <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarID"
-                        aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation"
-                            class="relative inline-flex items-left justify-left rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
-                            <span class="absolute -inset-0.5"></span>
-                            <span class="sr-only">Open main menu</span>
-                            <!--
+    <body>
+        <div class="container">
+            <nav class="bg-light-500">
+                <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+                    <div
+                        class="relative flex h-16 items-center justify-between">
+                        <div
+                            class="absolute inset-y-0 left-0 flex items-end sm:hidden">
+                            <!-- Mobile menu button-->
+                            <button type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarID"
+                                aria-controls="navbarID" aria-expanded="false"
+                                aria-label="Toggle navigation"
+                                class="relative inline-flex items-left justify-left rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                                <span class="absolute -inset-0.5"></span>
+                                <span class="sr-only">Open main menu</span>
+                                <!--
                       Icon when menu is closed.
           
                       Menu open: "hidden", Menu closed: "block"
                     -->
-                            <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                            </svg>
-                            <!--
+                                <svg class="block h-6 w-6" fill="none"
+                                    viewBox="0 0 24 24" stroke-width="1.5"
+                                    stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                                </svg>
+                                <!--
                       Icon when menu is open.
           
                       Menu open: "block", Menu closed: "hidden"
                     -->
-                            <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                            </svg>
-                        </button>
-                    </div>
-                    <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                        <div class="flex flex-shrink-0 items-center">
-                            <img class="h-12 w-auto" src="assets/img/URBAN PAY LOGO PNG.png" alt="Your Company">
-                            <p class="text-lg font-bold leading-6 text-gray-900 ">URBAN PAY</p>
+                                <svg class="hidden h-6 w-6" fill="none"
+                                    viewBox="0 0 24 24" stroke-width="1.5"
+                                    stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </button>
                         </div>
-                        <div class="hidden sm:ml-6 sm:block">
-                            <div class="flex space-x-5">
-                                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                                <div class="navstyle ml-40">
-                                    <ul class="nav nav-pills nav-fill">
-                                        <li class="nav-item">
-                                            <a class="nav-link effectSect text-white rounded-md px-3 py-2 text-lg font-medium actives"
-                                                href="index.html">Home</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link effectSect text-white rounded-md px-3 py-2 text-lg font-medium"
-                                                href="about.html">About</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link effectSect text-white rounded-md px-3 py-2 text-lg font-medium"
-                                                href="contact.html">Contact Us</a>
-                                        </li>
-
-                                    </ul>
-
+                        <div
+                            class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                            <div class="flex flex-shrink-0 items-center">
+                                <img class="h-12 w-auto"
+                                    src="assets/img/URBAN PAY LOGO PNG.png"
+                                    alt="Your Company">
+                                <p
+                                    class="text-lg font-bold leading-6 text-gray-900 ">URBAN
+                                    PAY</p>
+                            </div>
+                            <div class="hidden sm:ml-6 sm:block">
+                                <div class="flex space-x-5">
+                                    <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                                    <div class="navstyle ml-40">
+                                        <ul class="nav nav-pills nav-fill">
+                                            <li class="nav-item">
+                                                <a class="nav-link effectSect text-white rounded-md px-3 py-2 text-lg font-medium actives"
+                                                    href="index.html">Home</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link effectSect text-white rounded-md px-3 py-2 text-lg font-medium"
+                                                    href="about.html">About</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link effectSect text-white rounded-md px-3 py-2 text-lg font-medium"
+                                                    href="#modalId"  data-bs-toggle="modal"
+                                                  >Contact Us</a>
+                                            </li>
+    
+                                        </ul>
+    
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-                        <a href="#" class="text-lg font-bold leading-6 text-gray-900 mt-2">Log in <span
-                                aria-hidden="true">&rarr;</span></a>
-                        <button class="bg-purple-600 text-white font-bold py-2 px-4 rounded">
-                            Create Account
-                        </button>
-                    </div>
-                </div>
-            </div>
+                        <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+                            <button class="  font-bold py-2 px-4 rounded">
+                                <a href="#"
+                                    class="text-lg rounded  font-bold py-2 px-4 text-gray-900 ">Log
+                                    in </a>
 
-            <!-- Mobile menu, show/hide based on menu state. -->
-            <div  class="collapse navbar-collapse " id="navbarID">
-                <div class="space-y-1 px-2 pb-3 pt-2">
-                    <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                    <a href="#" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
-                        aria-current="page">Home</a>
-                    <a href="#"
-                        class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">About</a>
-                    <a href="#"
-                        class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Contact
-                        Us</a>
-                    <!-- <a href="#"
-                        class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Calendar</a> -->
-                        <div class=" text-center">
-                            <a href="#" class="text-lg font-bold block   text-base  text-gray-900 rounded-md  px-3 py-2  ">Log in <span
-                                    aria-hidden="true">&rarr;</span></a>
-                            <button class="bg-purple-600 text-white font-bold py-2 px-4 rounded">
+                            </button>
+                            <button
+                                class="bg-purple-600 text-white font-bold py-2 px-4 rounded">
                                 Create Account
                             </button>
                         </div>
+                    </div>
+                </div>
+
+                <!-- Mobile menu, show/hide based on menu state. -->
+                <div class="collapse navbar-collapse " id="navbarID">
+                    <div class="space-y-1 px-2 pb-3 pt-2">
+                        <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                        <a href="index.html" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
+                        aria-current="page">Home</a>
+                    <a href="about.html"
+                        class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">About</a>
+                    <a        href="#modalId"  data-bs-toggle="modal"
+                        class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Contact
+                        Us</a>
+                        <!-- <a href="#"
+                        class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Calendar</a> -->
+                        <div class=" text-center">
+                            <a href="#"
+                                class="text-lg font-bold block   text-base  text-gray-900 rounded-md  px-3 py-2  ">Log
+                                in <span
+                                    aria-hidden="true">&rarr;</span></a>
+                            <button
+                                class="bg-purple-600 text-white font-bold py-2 px-4 rounded">
+                                Create Account
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </nav>
+            <!-- //page contents -->
+            <div class="content">
+                <div class="row my-40 " data-aos="zoom-in"
+                    data-aos-duration="3000">
+                    <div class=" col-md-12 d-flex text-center align-items-center justify-content-center">
+                        <div class="">
+                            <h1 class=" display-1 font-extrabold  text-black ">
+                                Don't <span id="animatedText"
+                                    class="custom-color">Pester</span> about
+                                <br> borders anymore
+                            </h1>
+                            <p class="text-sm text-slate-800 py-5 ">
+                                Welcome to a borderless payment future where
+                                <br>
+                                simplicity and global connectivity are just a click
+                                away
+                            </p>
+                            <div class="flex-wrap space-x-4">
+                                <button
+                                    class="h-10 rounded-full border custom-border  border-slate-800 text-slate-800 px-3">
+                                    Get on
+                                    <span class="font-medium">Google Play</span>
+                                </button>
+                                <button
+                                    class="h-10  rounded-full border custom-border1 border-slate-800 text-slate-800 px-3">
+                                    Get
+                                    on <span class="font-medium">App Store</span>
+                                </button>
+                            </div>
+                        </div>
+                       
+                    </div>
+
+                </div>
+                <div class="row gap-4 my-40  ">
+                    <div class="col-md-6">
+
+                    </div>
+                    <div
+                        class=" col-md-6 d-flex text-center align-items-center justify-content-center"
+                        data-aos="fade-up" data-aos-duration="3000">
+                        <div class="">
+                            <h1
+                                class=" display-3 text-black font-semibold text-4xl text-capitalize ">
+                                It is <a class="custom-color"
+                                    style="color: #43B671;">your
+                                    money</a>
+                                spend it your way </h1>
+                            <p class="text-sm text-slate-800 py-5 ">At out
+                                platform, your money is sacred We respect your
+                                funds
+                                and
+                                never interfere with your financial matters</p>
+                            <div class="flex-wrap space-x-4">
+                                <button
+                                    class="h-10 rounded-md custom-bg1  text-white custom-border px-3"
+                                    style="background-color: #43B671;"> Download
+                                    App
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-40">
+                    <div
+                        class="col-md-6 d-flex text-center align-items-center justify-content-center"
+                        data-aos="fade-right" data-aos-duration="3000">
+                        <div class>
+
+                            <h1
+                                class=" display-3 font-semibold  text-4xl text-black  text-capitalize">
+                                Get notified of <span
+                                    class="text-red-600"
+                                    style="color: #F00010;">fake
+                                    transactions </span>in seconds </h1>
+                            <p class="text-sm text-slate-800 py-5 ">We notify
+                                you when a fake transaction has been detected
+                                through
+                                our systems continuous analysis</p>
+                            <div class="flex-wrap space-x-4">
+                                <button
+                                    class="h-10 rounded-md custom-bg1 bg-red-600  text-white custom-border px-3"
+                                    style="background-color: #EF0010;"> Secure
+                                    my
+                                    transaction </button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 ">
+                        <img src="./media/landingPageMedia/3d (1) 1.png" alt
+                            class="img-fluid" style="background-position: center; object-fit: contain; width: 100%; height: 100%;">
+
+                    </div>
+                </div>
+                <div class="row  my-40" data-aos="fade-up"
+                    data-aos-duration="3000"
+                    data-aos-anchor-placement="top-bottom">
+                    <div class="col-md-12 d-flex text-center align-items-center justify-content-center">
+                        <div class="">
+                            <h1
+                                class=" display-3 font-semibold  text-black text-4xl text-capitalize  ">
+                                Get real-time <span
+                                    class="text-red-600">local</span> transport
+                                prices in seconds</h1>
+                            <p class="text-sm text-slate-800 py-5 ">you can get
+                                real-time prices for both local and commercial
+                                vechicles. this will enable you abreast of
+                                up-to-date pricing and plan yourself accordingly</p>
+                            <div class="flex-wrap space-x-4">
+                                <button
+                                    class="h-10 rounded-md custom-bg1   text-white custom-border px-3"
+                                    style="background-color: #FF971D;"> View
+                                    today's
+                                    transport price </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row my-40  ">
+                    <div class="col-md-6 ">
+
+                    </div>
+                    <div class="col-md-6 d-flex text-center align-items-center justify-content-center" data-aos-duration="3000"
+                        data-aos="fade-left">
+                        <div class="">
+                            <h1
+                                class=" display-3 font-semibold  text-black text-4xl text-capitalize">
+                                <span class="custom-color">One Card + one WALLET
+                                    =</span> Multiple transaction$ </h1>
+                            <p class="text-sm text-slate-800 py-3 ">Say goodbye to
+                                juggling wallets and effortlessly handle your
+                                currencies with ease on a single platform.
+                                Experience the freedom and flexibility</p>
+                            <div class="flex-wrap space-x-4">
+                                <button
+                                    class="h-10 rounded-md custom-bg1  text-white custom-border px-3">
+                                    Download App
+                                </button>
+    
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+    <!-- Modal trigger button -->
+                    <!-- <button
+                        type="button"
+                        class="btn btn-primary btn-lg"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modalId"
+                    >
+                        Launch
+                    </button> -->
+                    
+                    <!-- Modal Body -->
+                    <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+                    <div
+                        class="modal fade"
+                        id="modalId"
+                        tabindex="-1"
+                        data-bs-backdrop="static"
+                        data-bs-keyboard="false"
+                        
+                        role="dialog"
+                        aria-labelledby="modalTitleId"
+                        aria-hidden="true"
+                        
+                    >
+                        <div
+                            class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-md"
+                            role="document" 
+                        >
+                            <div class="modal-content p-2 rounded-lg border-none justify-content-center align-items-center  text-center" style="background-color: #E2BAFA;">
+                              
+                                <div class="modal-body d-flex justify-content-center align-items-center text-center">
+                                    <div class="rounded-md w-100">
+                                        <form>
+                                            <div class="row mb-2">
+                                                <div class="col-md-12 d-flex justify-between">
+                                                    <div class="">
 
-        </nav>
-        <!-- //page contents -->
-        <div class="content">
-            <div class="row my-40 reveal-on-scroll" id="animatedElement">
-                <div class=" col-md-12 text-center">
-
-                    <h1 class=" display-1 font-extrabold  text-black "> Don't <span id="animatedText"
-                            class="custom-color">Pester</span> about
-                        <br> borders anymore
-                    </h1>
-                    <p class="text-sm text-slate-800 py-5 text-center"> Welcome to a borderless payment future where
-                        <br>
-                        simplicity and global connectivity are just a click away
-                    </p>
-                    <div class="flex-wrap space-x-4">
-                        <button class="h-10 rounded-full border custom-border  border-slate-800 text-slate-800 px-3">
+                                                        <h3 class="text-center font-bold display-5 mb-2">Contact Us</h3>
+                                                        <p>We guarantee fast feedback for all your UrbanPay needs</p>
+                                                    </div>
+                                                    <button
+                                                    type="button"
+                                                    class="btn-close"
+                                                    data-bs-dismiss="modal"
+                                                    aria-label="Close"
+                                                ></button>
+                                                </div>
+                                            </div>
+                    
+                                            <div class="row mb-">
+                                                <div class="col-md-6 mb-2">
+                                                    <input type="text" class="form-control  rounded-md" placeholder="Your Fullname">
+                                                </div>
+                                                <div class="col-md-6 mb-2">
+                                                    <input type="text" class="form-control  rounded-md" placeholder="Your Fullname">
+                                                </div>
+                                            </div>
+                                            <div class="mb-2 row">
+                                                <div class="col-md-12">
+                                                    <input type="text" class="form-control  rounded-md" name="inputName" id="inputName"
+                                                        placeholder="Email Address" />
+                                                </div>
+                                            </div>
+                                            <div class="mb-2 row">
+                                                <div class="col-md-12">
+                                                    <textarea name="" id="" cols="30" rows="10" class="form-control rounded-md"
+                                                        placeholder="Type your message here"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12 justify-content-center align-items-center text-center">
+                                                    <div class="flex-wrap space-x-4">
+                    
+                                                        <button class="h-10 rounded-md custom-bg1  text-white  px-3" style="background-color: #A020F0;"  type="submit"> Send
+                                                            Message </button>
+                                                            <button
+                                                            type="button"
+                                                            class="btn btn-secondary"
+                                                            data-bs-dismiss="modal"
+                                                        >
+                                                            Close
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                 
+                    
+            <!-- Footer -->
+            <footer class=" text-black  mt-auto" data-aos="zoom-out"
+                data-aos-duration="3000">
+                <div
+                    class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+                    <div class="mb-4 md:mb-0 grid  text-center">
+                        <h1
+                            class="mb-4  text-2xl font-bold display-5">URBANPAY</h1>
+                        <button
+                            class="  mb-4 row-span-1 h-10 rounded-full border custom-border  border-slate-800 text-slate-800 px-3">
                             Get on
-                            <span class="font-medium">Google Play</span> </button>
-                        <button class="h-10  rounded-full border custom-border1 border-slate-800 text-slate-800 px-3">
+                            <span class="font-medium">Google Play</span>
+                        </button>
+                        <button
+                            class=" mb-4 h-10 row-span-1  rounded-full border custom-border1 border-slate-800 text-slate-800 px-3">
                             Get
-                            on <span class="font-medium">App Store</span> </button>
-                    </div>
-                </div>
-
-            </div>
-            <div class="row gap-4 my-40  ">
-                <div class="col none">
-
-
-                </div>
-                <div class=" col text-justify" id="my__Element">
-
-                    <h1 class=" display-1 font-semibold  text-black text-wrap "> It is <span class="custom-color">your
-                            money</span>
-                        spend it your way </h1>
-                    <p class="text-sm text-slate-800 py-5 ">At out platform, your money is sacred We respect your funds
-                        and
-                        never interfere with your financial matters</p>
-                    <div class="flex-wrap space-x-4">
-                        <button class="h-10 rounded-md custom-bg1  text-white custom-border px-3"> Download App
+                            on <span class="font-medium">App Store</span>
                         </button>
-
+                    </div>
+                    <div class="grid my-2  text-center">
+                        <a href="#"
+                            class="hover:text-lime-800 row-span-1 font-bold display-5 custom-color">Product</a>
+                        <a href="#"
+                            class="hover:text-lime-800 row-span-1">Transfer
+                            Money</a>
+                        <a href="#"
+                            class="hover:text-lime-800 row-span-1">Transfer
+                            Pricing</a>
+                        <a href="#"
+                            class="hover:text-lime-800 row-span-1">Virtual
+                            Cards</a>
+                        <a href="#"
+                            class="hover:text-lime-800 row-span-1">Currency
+                            Exchange</a>
+                    </div>
+                    <div class="grid my-2  text-center">
+                        <a href="#"
+                            class="hover:text-lime-800 row-span-1  font-bold display-5 custom-color">Company</a>
+                        <a href="#"
+                            class="hover:text-lime-800 row-span-1">Contact</a>
+                        <a href="#"
+                            class="hover:text-lime-800 row-span-1">Careers</a>
+                        <a href="#"
+                            class="hover:text-lime-800 row-span-1">About</a>
+                        <a href="#"
+                            class="hover:text-lime-800 row-span-1">Blog</a>
+                    </div>
+                    <div class="grid my-2 text-center">
+                        <a href="#"
+                            class="hover:text-lime-800 row-span-1  font-bold display-5 custom-color">Connect</a>
+                        <a href="#"
+                            class="hover:text-lime-800 row-span-1">Twitter</a>
+                        <a href="#"
+                            class="hover:text-lime-800 row-span-1">Instagram</a>
+                        <a href="#"
+                            class="hover:text-lime-800 row-span-1">Linkedin</a>
+                        <a href="#"
+                            class="hover:text-lime-800 row-span-1">Facebook</a>
                     </div>
                 </div>
-            </div>
-            <div class="row my-40">
-                <div class="col text-justify" id="myElement">
+                <div class="container  items-justify ">
+                    <p class="text-slate-800">UrbanPay is a cutting-edge
+                        financial technology company dedicated to
+                        transforming the way people transact and manage their
+                        finances. We have an understanding of urban
+                        lifestyles and use that to provide seamless and secure
+                        payment experiences</p>
+                    <p class="my-3">&#169 2023
+                        <p>
+                        </div>
 
-                    <h1 class=" display-1 font-semibold  text-black  text-wrap"> Get notified of <span
-                            class="text-red-600">fake
-                            transactions </span>in seconds </h1>
-                    <p class="text-sm text-slate-800 py-5 ">We notify you when a fake transaction has been detected
-                        through
-                        our systems continuous analysis</p>
-                    <div class="flex-wrap space-x-4">
-                        <button class="h-10 rounded-md custom-bg1 bg-red-600  text-white custom-border px-3"> Secure my
-                            transaction </button>
-
-                    </div>
+                    </footer>
                 </div>
-                <div class="col none">
+                <script
+                    src="./assets/bootstrap5.2/bootstrap.bundle.min.js"></script>
+                <script src="./assets/bootstrap5.2/jquery.min.js"></script>
+                <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                <script src="./assets/anime.js"></script>
+                <script src="./assets/custom.js"></script>
+                <script src="./assets/scrollmagic.js"></script>
 
+            </body>
 
-                </div>
-            </div>
-            <div class="row  my-40">
-                <div class="col-md-12 text-justify">
-
-                    <h1 class=" display-1 font-semibold  text-black text-wrap  "> Get real-time local transport prices
-                        <span class="text-red-600">fake transactions </span> in seconds
-                    </h1>
-                    <p class="text-sm text-slate-800 py-5 ">you can get real-time prices for both local and commercial
-                        vechicles. this will enable you abreast of up-to-date pricing and plan yourself accordingly</p>
-                    <div class="flex-wrap space-x-4">
-                        <button class="h-10 rounded-md custom-bg1 bg-red-600  text-white custom-border px-3"> View
-                            today's
-                            transport price </button>
-
-                    </div>
-                </div>
-            </div>
-            <div class="row my-40  ">
-                <div class="col none">
-
-                </div>
-                <div class="col text-justify">
-
-                    <h1 class=" display-1 font-extrabold  text-black text-wrap "> <span class="custom-color">One Card +
-                            one
-                            WALLET =</span> Multiple transaction$ </h1>
-                    <p class="text-sm text-slate-800 py-5 ">Say goodbye to juggling wallets and effortlessly handle your
-                        currencies with ease on a single platform. Experience the freedom and flexibility</p>
-                    <div class="flex-wrap space-x-4">
-                        <button class="h-10 rounded-md custom-bg1  text-white custom-border px-3"> Download App
-                        </button>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Footer -->
-        <footer class=" text-black  mt-auto">
-            <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
-                <div class="mb-4 md:mb-0 grid  text-center">
-                    <h1 class="mb-4  text-2xl font-bold display-5">URBANPAY</h1>
-                    <button
-                        class="  mb-4 row-span-1 h-10 rounded-full border custom-border  border-slate-800 text-slate-800 px-3">
-                        Get on
-                        <span class="font-medium">Google Play</span> </button>
-                    <button
-                        class=" mb-4 h-10 row-span-1  rounded-full border custom-border1 border-slate-800 text-slate-800 px-3">
-                        Get
-                        on <span class="font-medium">App Store</span> </button>
-                </div>
-                <div class="grid my-2  text-center">
-                    <a href="#" class="hover:text-lime-800 row-span-1 font-bold display-5 custom-color">Product</a>
-                    <a href="#" class="hover:text-lime-800 row-span-1">Transfer Money</a>
-                    <a href="#" class="hover:text-lime-800 row-span-1">Transfer Pricing</a>
-                    <a href="#" class="hover:text-lime-800 row-span-1">Virtual Cards</a>
-                    <a href="#" class="hover:text-lime-800 row-span-1">Currency Exchange</a>
-                </div>
-                <div class="grid my-2  text-center">
-                    <a href="#" class="hover:text-lime-800 row-span-1  font-bold display-5 custom-color">Company</a>
-                    <a href="#" class="hover:text-lime-800 row-span-1">Contact</a>
-                    <a href="#" class="hover:text-lime-800 row-span-1">Careers</a>
-                    <a href="#" class="hover:text-lime-800 row-span-1">About</a>
-                    <a href="#" class="hover:text-lime-800 row-span-1">Blog</a>
-                </div>
-                <div class="grid my-2 text-center">
-                    <a href="#" class="hover:text-lime-800 row-span-1  font-bold display-5 custom-color">Connect</a>
-                    <a href="#" class="hover:text-lime-800 row-span-1">Twitter</a>
-                    <a href="#" class="hover:text-lime-800 row-span-1">Instagram</a>
-                    <a href="#" class="hover:text-lime-800 row-span-1">Linkedin</a>
-                    <a href="#" class="hover:text-lime-800 row-span-1">Facebook</a>
-                </div>
-            </div>
-            <div class="container  items-justify ">
-                <p class="text-slate-800">UrbanPay is a cutting-edge financial technology company dedicated to
-                    transforming the way people transact and manage their finances. We have an understanding of urban
-                    lifestyles and use that to provide seamless and secure payment experiences</p>
-                <p class="my-3">&#169 2023
-                <p>
-            </div>
-
-        </footer>
-    </div>
-    <script src="./assets/bootstrap5.2/bootstrap.bundle.min.js"></script>
-    <script src="./assets/bootstrap5.2/jquery.min.js"></script>
-    <script src="./assets/anime.js"></script>
-    <script src="./assets/custom.js"></script>
-    <script src="./assets/scrollmagic.js"></script>
-
-
-
-
-
-
-</body>
-
-</html>
+        </html>

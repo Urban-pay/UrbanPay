@@ -97,3 +97,7 @@ document.addEventListener("DOMContentLoaded", function () {
         );
     }
 });
+
+
+// aos js
+AOS.init();
