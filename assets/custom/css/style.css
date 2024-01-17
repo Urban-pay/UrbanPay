@@ -132,3 +132,16 @@
     }
 
 }
+.get-started{
+    background-color: #632FD9;
+    color: white;
+}
+
+.get-login{
+    color: #632FD9;
+    border: 1px solid #632FD9;
+}
+.text-color{
+    color: #632FD9;
+
+}

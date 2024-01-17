@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UrbanPay:dashboard</title>
+    <link rel="stylesheet" href="../assets/bootstrap5.2/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/custom/css/style.css" />
+    <link rel="stylesheet" href="../assets/tailwind/tailwind.css" />
+    <link
+      rel="shortcut icon"
+      href="../assets/img/URBAN PAY LOGO PNG.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body class="">
+    <!-- Covering image -->
+    <div
+      class="fixed top-0 left-0 w-full h-full flex items-center justify-center"
+      id="loader"
+    >
+      <!-- <img
+        src="../media/dashoard/URBAN PAY LOGO PNG WHITE.svg"
+        alt="Cover Image"
+        class="object-cover w-full h-full"
+        id="coverImage"
+      /> -->
+      <div
+        class="flex justify-center items-center text-center w-full h-full"
+        style="background-color: #632fd9"
+      >
+        <img
+          src="../media/dashoard/URBAN PAY LOGO PNG WHITE.jpg"
+          id="coverImage"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <!-- Actual content with fade-in effect -->
+    <div class="hidden" id="content">
+      <div
+        class="container flex justify-center items-center text-center h-screen"
+        style="height: 100vh"
+      >
+        <div class="p-3 " style="height: 100%; width: 350px">
+          <swiper-container
+            class="mySwiper mb-12"
+            pagination="true"
+            pagination-dynamic-bullets="true"
+            style="height: 50%;"
+          >
+            <swiper-slide class="flex justify-center items-center text-center"
+              ><img
+                src="../media/dashoard/money and bg.jpg"
+                id="coverImage"
+                class="img-fluid"
+                alt=""
+            /></swiper-slide>
+            <swiper-slide class="flex justify-center items-center text-center"
+              ><img
+                src="../media/dashoard/Group 133537.jpg"
+                id="coverImage"
+                class="img-fluid"
+                alt=""
+            /></swiper-slide>
+            <swiper-slide class="flex justify-center items-center text-center"
+              ><img
+                src="../media/dashoard/groceries max.jpg"
+                id="coverImage"
+                class="img-fluid"
+                alt=""
+            /></swiper-slide>
+          </swiper-container>
+
+          <div class="mb-12" style="height: 20%;">
+            <h1 class="text-3xl font-semibold">
+              Seamless transactions and even more
+            </h1>
+            <p class="text-sm">
+              Dive yourself into a versatile app that excels in efficient
+              transactions and beyond
+            </p>
+          </div>
+          <div class=" " style="height: 30%;">
+            <button class="w-full mb-3 py-2 get-started"> <a href="create-account.html" class="text-white "> Get Started</a>  </button>
+            <button class="w-full py-2 get-login"><a href="login.html" class="text-color"> Get Login</a> </button>
+          </div>
+        </div>
+        <!-- Your content goes here -->
+      </div>
+    </div>
+
+    <!-- <div class="container-fluid">
+        <div class="flex justify-center items-center text-center " style="height: 100vh;">
+            <img src="../media/dashoard/URBAN PAY LOGO PNG WHITE.svg" alt="">
+        </div>
+    </div> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+    <script src="../assets/bootstrap5.2/bootstrap.bundle.min.js"></script>
+    <script src="../assets/bootstrap5.2/jquery.min.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Get the cover image element
+        // const coverImage = document.getElementById("coverImage");
+
+        // // Add a class to the image to initiate the fade-out effect
+        // coverImage.classList.add("opacity-0", "transition-opacity");
+
+        // Set a timeout to remove the image and display the content after a delay
+        $("#loader").fadeOut(3);
+        content.classList.remove("hidden");
+
+        // setTimeout(function () {
+        //   // Remove the image
+        //   $("#loader").fadeOut(3)
+        // //   coverImage.remove();
+
+        //   // Display the content
+        //   const content = document.getElementById("content");
+        //   content.classList.remove("hidden");
+        // }, 3000); // Adjust the delay (in milliseconds) based on your preference
+      });
+    </script>
+  </body>
+</html>
