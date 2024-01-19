@@ -11,12 +11,12 @@
 }
 
 .custom-border {
-    border-color: #0e7437;
+    border-color: #66A966 !important;
 
 }
 
 .custom-border1 {
-    border-color: #7217aa;
+    border-color: #8B18D3 !important;
 }
 
 .custom-bg1 {
@@ -144,4 +144,10 @@
 .text-color{
     color: #632FD9;
 
+}
+.gray-btn{
+    background-color: #484649 !important;
+}
+.text-grayy{
+    color: #484649 !important;
 }
