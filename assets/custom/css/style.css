@@ -1,5 +1,5 @@
 body {
-    background-color: #f4f4f4;
+    /* background-color: #f4f4f4; */
     /* margin: 0 !important;
     padding: 0 !important; */
 }
@@ -151,4 +151,7 @@ body {
 }
 .text-grayy{
     color: #484649 !important;
+}
+.span-color{
+    background-color: #E0D5F7;
 }
