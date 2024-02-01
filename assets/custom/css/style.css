@@ -155,3 +155,11 @@ body {
 .span-color{
     background-color: #E0D5F7;
 }
+
+.nav-item .active{
+    background-color: #E9E2F9 !important;
+    color: black;
+}
+.card-btn{
+    background-color: #632FD9;
+}
